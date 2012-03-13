@@ -13,7 +13,7 @@
 */
 
 (function() {
-
+"use strict";
 	var _after			= 1;
 	var _afterThrow		= 2;
 	var _afterFinally	= 3;
@@ -119,7 +119,7 @@
 
 		aspect.unweave = function() { 
 			source[method] = old;
-			pointcut = source = aspect = old = null;
+			source = aspect = old = null;
 		};
 
 		source[method] = aspect;
